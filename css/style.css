@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC';
+    font-size: 20px;    
+
+}
+
+html {
+
+    scroll-snap-type: y mandatory;
+}
+
+#r_Startscreen, #r_SchwarzesLoch, #r_ContainerTesserakt, #r_ContainerTesserakt2, #f_Steinzeit, #f_Zukunft, #r_Tesserakt_Ende, #r_TesseraktGanzEnde, #r_SteinzeitEntscheidung, #r_ZukunftEntscheidung, #Endscreen {
+
+    scroll-snap-align: start;
+    overflow: hidden;
+   	
+}
+
+body {
+
+    z-index: -100;
+    position: relative;
+    cursor:  url('../Bilder/Mouse_4x.cur'), auto;
+    
+}
+
+#impressum {
+
+    background-color: black;
+}
+
+
+/* ----------------------------------- */
+/*         ABTEIL RAPHAEL              */
+/* ----------------------------------- */
+
+
+#r_Startscreen {
+
+    height: 100VH;
+    background-image: url('../Bilder/Starthintergrund.png');
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.infobutton {
+
+    
+    z-index: 4000;
+    position: absolute;
+    width: 3%;
+    bottom: 2%;
+    right: 2%;
+    color: white;
+}
+
+.r_blackscreen, .r_blackscreen2, .r_blackscreen3, .r_blackscreen4 {
+
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000
+
+}
+
+.r_Startscreen_Textcontainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.r_Startscreen_Button {
+
+    position: absolute;
+    margin-top: 10%;
+}
+
+.r_Startscreen_Textfeld1, .r_Startscreen_Textfeld2 {
+
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+    display: block;
+    
+}
+
+.r_Startscreen_Textfeld1 {
+
+    position: absolute;
+    top: 15%;
+}
+
+.r_Startscreen_Textfeld2 {
+
+    position: absolute;
+    bottom: 15%;
+}
+
+
+.r_Startscreen_Hinweis1, .r_Startscreen_Hinweis2 {
+
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+.volumeUp {
+
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 4%;
+}
+
+#r_SchwarzesLoch {
+
+    height: 100VH;
+    background-color: bisque;
+    background-image: url('../Bilder/SchwarzesLoch.jpg');
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.r_truemmer1 {
+
+    background-image: url('../Bilder/Truemmer/Teil1.svg');
+    background-repeat: no-repeat, repeat;
+    left: 50%;
+    top: 70%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.r_truemmer2 {
+
+    background-image: url('../Bilder/Truemmer/Teil2.svg');
+    background-repeat: no-repeat, repeat;
+    left: 20%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.r_truemmer3 {
+
+    background-image: url('../Bilder/Truemmer/Teil3.svg');
+    background-repeat: no-repeat, repeat;
+    left: 40%;
+    top: 30%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.r_truemmer4 {
+
+    background-image: url('../Bilder/Truemmer/Teil4.svg');
+    background-repeat: no-repeat, repeat;
+    left: 10%;
+    top: 70%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.r_truemmer5 {
+
+    background-image: url('../Bilder/Truemmer/Teil5.svg');
+    background-repeat: no-repeat, repeat;
+    left: 60%;
+    top: 60%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.r_truemmer6 {
+
+    background-image: url('../Bilder/Truemmer/Teil6.svg');
+    background-repeat: no-repeat, repeat;
+    left: 40%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.r_truemmer7 {
+
+    background-image: url('../Bilder/Truemmer/Teil7.svg');
+    background-repeat: no-repeat, repeat;
+    left: 30%;
+    top: 20%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.r_truemmer8 {
+
+    background-image: url('../Bilder/Truemmer/Teil8.svg');
+    background-repeat: no-repeat, repeat;
+    left: 20%;
+    top: 40%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.r_truemmer9 {
+
+    background-image: url('../Bilder/Truemmer/Teil9.svg');
+    background-repeat: no-repeat, repeat;
+    left: 55%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.r_WeltraumPerson {
+
+    width: 10%;
+    position: absolute;
+    left: 80%;
+    top: 25%;
+}
+
+.r_WeltraumPersonNah {
+
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    
+    z-index: 4;
+    opacity: 0;
+}
+
+.r_WeltraumPersonNah2 {
+
+    width: 40%;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    z-index: 4;
+    opacity: 1;
+}
+
+.r_WeltraumPersonWeit {
+
+    width: 10%;
+    position: sticky;
+    left: 52%;
+    top: 40%;
+    margin-top: -70vh;
+}
+
+.r_WeltraumPersonWeit2 {
+
+    width: 10%;
+    position: absolute;
+    left: 52%;
+    top: 40%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+#r_ContainerTesserakt {
+
+    height:100VH;
+    background-image: url('../Bilder/TesseraktHintergrund.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -3;
+}
+
+#r_ContainerTesserakt2 {
+
+    height:100VH;
+    background-image: url('../Bilder/TesseraktHintergrund.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -3;
+
+}
+
+.r_scrollPfeil {
+
+    width: 1.5%;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    opacity: 0;
+}
+
+.r_scrollPfeil2 {
+
+    width: 1.5%;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    opacity: 0;
+}
+
+
+
+.r_Tesserakt {
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: -10;
+   
+}
+
+.r_TesseraktNah {
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -10;
+
+}
+
+.r_Tesserakt_Charakter, .r_Tesserakt_CharakterEnde {
+
+
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    top: 80%;
+    margin-left: 70%;
+    position: absolute;
+    opacity: 0;
+    font-family: 'Annie Use Your Telescope', cursive;
+
+}
+
+.r_Tesserakt_Überwesen, .r_Tesserakt_ÜberwesenEnde {
+
+    padding: 10px;
+    z-index: 10;
+    color: white;
+    font-size: 1.5rem;
+    top: 20%;
+    left: 10%;
+    position: absolute;
+    opacity: 0;
+    background:rgba(0, 24, 41, 0.404);
+    border-radius: 8px;
+    font-family: 'Annie Use Your Telescope', cursive;
+
+}
+
+.r_Tesserakt_bContainer {
+
+    position: sticky;
+    top: 80%;
+    margin-left: 85%;
+    width: 10VW;
+    
+}
+
+.buttonzumTest, .buttonzumTest2 {
+
+    height: 80px;
+    width: 100px;
+    z-index: 1000;
+    background-color: rgba(98, 179, 250, 0.356);
+    border: 0;
+    border-radius: 8px;
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    color: white;
+    opacity: 0;
+}
+
+.buttonzumTest2 {
+
+    height: 80px;
+    width: 100px;
+    z-index: 1000;
+    background-color: rgba(98, 179, 250, 0.356);
+    border: 0;
+    border-radius: 8px;
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    color: white;
+    opacity: 1;
+
+}
+
+
+
+.r_Tesserakt_Button {
+
+    background-image: url('../Bilder/Pfeil.svg');
+    background-repeat: no-repeat, repeat;
+    width: 100px;
+    height: 50px;
+    margin-bottom: -10%;
+    display: none;
+}
+
+.r_Tesserakt_Button2 {
+
+    background-image: url('../Bilder/Pfeil.svg');
+    background-repeat: no-repeat, repeat;
+    width: 100px;
+    height: 50px;
+    display: none;
+}
+
+#r_Tesserakt_Ende {
+    
+    height:100VH;
+    background-image: url('../Bilder/TesseraktHintergrund.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -3;
+    overflow: hidden;
+}
+
+.r_TesseraktNahlinks {
+
+   
+    position: absolute;
+    width: 55%;
+    top: 0;
+    left: -2%;
+    z-index: -10;
+    
+
+}
+
+.r_TesseraktNahrechts {
+
+    
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 29%;
+    z-index: -12;
+    pointer-events: none;
+
+}
+
+.r_SteinzeitAuswahl {
+
+    position: absolute;
+    top: 0;
+    left: 12%;
+    width: 35%;
+    height: 45%;
+    z-index: -15;
+    transform: rotate(-14deg);
+    opacity: 0;
+
+}
+
+.r_SteinzeitAuswahl img {
+
+    position: absolute;
+    width: 120%;
+    top: 18%;
+    right: 0.01%;
+}
+
+
+
+.r_ZukunftAuswahl {
+
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    width: 35%;
+    height: 45%;
+    z-index: -15;
+    transform: rotate(-14deg);
+    opacity: 0;
+}
+
+
+.r_TesseraktHintergrund {
+
+  
+    position: absolute;
+    width: 60%;
+    top: 0;
+    right: 0;
+    z-index: -40;
+
+}
+
+#r_SteinzeitEntscheidung {
+
+    background-image: url('../Bilder/steinzeit_groeßervw.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#r_ZukunftEntscheidung {
+
+    height: 100VH;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -3;
+    overflow: hidden;
+}
+
+.r_Tesserakt2 {
+
+    position: absolute;
+    top: 0;
+    z-index: -10;
+   
+}
+
+#Endscreen {
+
+    height: 100VH;
+    background-image: url('../Bilder/Starthintergrund.png');
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.endeTitel, .endeTitel2, .endeTitel3{
+
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 3rem;
+}
+
+.endeTitel3 {
+
+    text-align: center;
+}
+
+@media only screen and (max-width: 1680px) {
+    .r_Startscreen_Button {
+      
+        top: 5%;
+
+    }
+
+
+    .r_Startscreen_Textfeld1 {
+        top: 10%;
+    }
+
+    .r_Startscreen_Textfeld2 {
+
+        bottom: 10%;
+    }
+  }
