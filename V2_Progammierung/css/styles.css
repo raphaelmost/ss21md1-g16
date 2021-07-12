@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    word-spacing: 0.1rem;
+
+}
+
+/* ----------------------------------- */
+/*           ABTEIL FABIAN             */
+/* ----------------------------------- */
+
+/* -----------------Steinzeit------------------ */
+.f_steinzeit_wrapper{
+   height: 100vh;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column; 
+}
+
+#f_Steinzeit{
+    background-image: url('../../Bilder/steinzeit_groeßervw.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+   
+}
+
+
+
+.f_steinzeitbutton{
+    position: absolute;
+    height: auto;
+    padding: 0.5rem 1rem ;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+    background-image: url('../../Bilder/steinzeit_button.png');
+    border: none;
+    text-shadow: 2px 2px 3px black;
+}
+
+.f_steinzeitbutton:hover{
+    background-image: url('../../Bilder/steinzeit_button_hover.png');
+}
+
+.f_feuercontainer{
+    visibility: hidden;
+    width: 30%;
+    position: absolute;
+    left: 43.5%;
+    top: 57%;
+}
+
+.f_video_feuer {
+
+    width: 100%;
+}
+
+.f_feuerentfacher{
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 80vh;
+    left: 90vh;
+}
+
+.f_steinzeit_hilfe{
+    position: absolute;
+    background-image: url('../../Bilder/steinzeit_button_hilfe.png');
+    border-radius: 5px;
+    padding: 2vh;
+    color: white;
+    left: 45vh;
+    top: 35vh;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 3px black;
+}
+
+/*IMG*/
+.f_steinzeit_charakter{
+    height: 60vh;
+    width: auto;
+    position: absolute;
+    left: 55vh;
+    top: 30vh;
+}
+
+.f_steinzeit_dialog_wrapper{
+    display: flex;
+    height: 90vh;
+    align-items: flex-end;  
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.f_steinzeit_dialog_charakter_wrapper{
+    width: 50vw;
+    padding-left: 15vh;
+    padding-right: 30vh;
+    padding-bottom: 5vh;
+    visibility: hidden;
+    z-index: 1000;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.f_steinzeit_dialog_charakter{
+    text-shadow: 2px 2px 3px black;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1.8rem;
+    /*
+    2px = horizontal
+    2px = vertikal
+    5px = blur
+    */
+}
+
+.f_steinzeit_dialog_ueberwesen_wrapper{
+    width: 50vw;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    padding-bottom: 60vh;
+    visibility: hidden;
+}
+
+
+.f_steinzeit_dialog_ueberwesen{
+    text-shadow: 2px 2px 3px black;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1.8rem;
+    border-radius: 5px;
+
+}
+
+/* -----------------Zukunft------------------ */
+
+
+#f_Zukunft {
+    /*Gibt die Broswerhöhe vor*/
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.f_zukunft_hilfe{
+    position: absolute;
+    background-image: url('../../Bilder/zukunft_button_hilfe.png');
+    border-radius: 5px;
+    padding: 2vh;
+    color: black;
+    font-weight: 700;
+    left: 45vh;
+    top: 35vh;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 3px white;
+}
+
+
+
+.f_video_zukunft{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    /*verhindert weißen Streifen am Ende*/
+}
+
+.f_video_zukunft2 {
+
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 20%;
+   
+}
+
+
+
+.f_zukunft_video_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*videocontainer orientiert sich am
+    Elternelement f_Zukunft*/
+}
+
+.f_zukunft_abstandscontainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*Abstandscontainer orientiert sich am
+    Elternelement videocontainer*/
+}
+
+.f_zukunft_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh;
+}
+
+.f_zukunft_dialog_charakter{
+    width: 50%;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px black;
+    padding-right: 30vh;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1.8rem;
+    z-index: 3001;
+    position: absolute;
+    top: 70%;
+}
+
+.f_zukunft_dialog_ueberwesen{
+    width: 50%;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400; 
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Annie Use Your Telescope', cursive;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.8rem;
+    z-index: 3001;
+    position: absolute;
+    top: 25%;
+    right: 2%;
+}
+
+.f_helmOverlay {
+
+   
+    width: 100%;
+    z-index: 3000;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+
+.f_zukunftbutton{
+    padding: 0.5rem 1rem ;
+    font-weight: 700;
+    font-size: 1.5rem; 
+    z-index: 2000;
+    background-image: url('../../Bilder/zukunft_button.png');
+    border: none;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.f_zukunftbutton:hover{
+    background-image: url('../../Bilder/zukunft_button_hover.png');
+}
+
+.f_zukunft_img_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.f_zukunft_helm{
+    transform: scale(0.5);
+    position: absolute;
+    width: 10%;
+    right: 27vh;
+    top: 57vh;
+    z-index: 1000;
+    z-index: 999;
+}
+
+.f_zukunft_pizza{
+    transform: scale(0.5);
+    position: absolute;
+    width: 20%;
+    top: 68%;
+    left: 35%; 
+    transition: 0.2s;
+    z-index: 999;
+}
+
+.f_zukunft_soda{
+    transform: scale(0.2);
+    position: absolute;
+    width: 10%;
+    top: 56%;
+    left: 45%;
+    transition: 0.2s;
+    z-index: 999;
+}
+
+.f_zukunft_buch{
+    transform: scale(0.2);
+    position: absolute;
+    top: 69%;
+    width: 20%;
+    left: 50%;
+    transition: 0.2s;
+    z-index: 999;
+}
+
+.f_zukunft_kissen{
+    transform: scale(0.2);
+    position: absolute;
+    width: 20%;
+    right: 27vh;
+    top: 63vh;
+    transition: 0.2s;
+    z-index: 999;
+}
+
+.f_zukunft_charakter{
+    position: absolute;
+
+    width: 12%;
+    top: 37%;
+    left: 28%;
+    
+}
+
+#f_Zukunft {
+
+    background-color: none;
+}
+
+
+@media only screen and (max-width: 1680px) {
+    
+    
+    .f_feuercontainer {
+
+        left: 43%;
+        top: 56%;
+
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.f_zukunft_content{
+    position: absolute;
+    top: 10vh;
+    width: 80%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.f_zukunft_abstandscontainer{
+    margin: 0 15vh;
+    
+    /*Erste Eigenschaft wird von top in content überschrieben*/
+
+
+
+/*
+.f_zukunftbutton{
+    left: 170vh;
+    top: 35vh;
+}
+*/
