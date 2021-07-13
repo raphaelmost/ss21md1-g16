@@ -1210,10 +1210,10 @@ ScrollTrigger.create({
 ScrollTrigger.create({
 
     trigger: "#Endscreen",
-    start: "-10% center",
+    start: "-10% top",
     //markers: true,
     end: "top top",
-    onEnter: endtitle,
+    onEnter: endtitle
    
 
 
